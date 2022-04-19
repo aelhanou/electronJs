@@ -1,0 +1,29 @@
+mutation addFiliale($FilialeInput: FilialeInput) {
+  addFiliale(input: $FilialeInput) {
+    id
+    name
+    description
+    image {
+      filename
+      mimetype
+      encoding
+    }
+  }
+}
+
+query GetFiliales {
+  Filiales {
+    id
+    name
+    description
+    image {
+      filename
+      mimetype
+      encoding
+    }
+  }
+}
+
+mutation deleteFiliale($id: ID!) {
+  deleteFiliale(id: $id)
+}

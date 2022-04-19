@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';"> -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <p class="w-full h-full z-0">Current theme source: <strong id="theme-source">System</strong>  </p>
+
+  <div id="root"></div>
+
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+  <button id="reset-to-system">Reset to System Theme</button>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <!-- <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+  <button id="reset-to-system">Reset to System Theme</button> -->
+
+
+  
+  <div class="container">
+    <h1>Enter Names and Email addresses of your contacts</h1>
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" name="Name" value="" id="Name" placeholder="Name" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="Email">Email</label>
+      <input type="email" name="Email" value="" id="Email" placeholder="Email" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary" id="add-to-list">Add to list!</button>
+    </div>
+
+    <div id="contact-list">
+      <table class="table-striped" id="contact-table">
+        <tr>
+          <th class="col-xs-2">S. No.</th>
+          <th class="col-xs-4">Name</th>
+          <th class="col-xs-6">Email</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  <script src="./renderer.js"></script>
+  <script src="./view.js"></script>
+
+</body>
+
+</html>

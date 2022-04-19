@@ -1,0 +1,18 @@
+overwrite: true
+schema: "http://localhost:4000/graphql"
+documents: "src/**/*.gql"
+generates:
+  src/generated/index.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      # - "typescript-react-apollo"
+      - "typescript-react-query"
+    config:
+      exposeFetcher: true
+      exposeQueryKeys: true
+      fetcher:
+        func: ./fetcher#fetcher
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
