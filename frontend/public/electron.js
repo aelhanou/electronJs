@@ -12,6 +12,7 @@ function createWindow() {
         width: 1200,
         height: 1000,
         title: "Electronjs with graphql ",
+        
         webPreferences: {
             // enableRemoteModule: true,
             nodeIntegration: true,

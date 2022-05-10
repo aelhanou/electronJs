@@ -9,6 +9,7 @@ import { SideBar } from './components';
 import { Home } from './pages/Home';
 import Project from './pages/Project';
 import GetFiliales from './pages/GetFiliales';
+import { Import } from './pages/Import';
 
 
 // const fs = window.require("fs")
@@ -113,6 +114,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Projects" element={<Project />} />
             <Route path="/getFiliales" element={<GetFiliales />} />
+            <Route path="/import" element={<Import />} />
+            
           </Routes>
         </div>
 
